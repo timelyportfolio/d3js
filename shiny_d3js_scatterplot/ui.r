@@ -34,7 +34,7 @@ shinyUI(pageWithSidebar(
     uiOutput("data_end_date"),
     # contact info
     helpText(HTML("<br>*Created by: <a href = \"https://twitter.com/jfreels4\">@jfreels4</a>
-                  <br>*github <a href = \"https://github.com/jfreels/d3js/shiny_d3js_scatterplot\">code</a>
+                  <br>*github <a href = \"https://github.com/jfreels/d3js/tree/master/shiny_d3js_scatterplot\">code</a>
                   ")
     )
   ),
