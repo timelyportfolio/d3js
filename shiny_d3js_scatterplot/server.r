@@ -10,6 +10,7 @@ lapply(libs,require,character.only=TRUE)
 #library(jfreels)
 
 # example_data
+data(edhec)
 example_data<-as.data.frame(edhec)
 example_data$date<-as.Date(row.names(example_data))
 example_data<-subset(example_data,select=c(ncol(example_data),1:(ncol(example_data)-1)))
