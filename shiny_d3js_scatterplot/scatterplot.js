@@ -50,6 +50,7 @@ $.extend(networkOutputBinding, {
     },
     renderValue: function(el, data) {
     
+
 //remove old graph    
 var svg = d3.select("#scatterplot").select("svg")
                         .remove();
@@ -78,8 +79,9 @@ var yAxis = d3.svg.axis()
 var color = d3.scale.category10();
 
 //d3.csv("www/flowers.csv", function(error, data) {
+// where the magic happens with d3js interacting with shiny
   var domainByTrait = {},
-      traits = d3.keys(data[0]).filter(function(d) { return d !== "Date"; }),
+      traits = d3.keys(data[0]).filter(function(d) { return d !== "date"; }),
       n = traits.length;
 
   traits.forEach(function(trait) {
@@ -190,12 +192,12 @@ svg = d3.select("#scatterplot").append("svg")
   d3.select(self.frameElement).style("height", size * n + padding + 20 + "px");
 //});
 
-    
-    
-    
-    
+  
     }
   });
   Shiny.outputBindings.register(networkOutputBinding, 'timelyportfolio.networkbinding');
   
+
+
+
   </script>
