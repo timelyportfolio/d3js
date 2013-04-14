@@ -52,6 +52,7 @@ $.extend(networkOutputBinding, {
     
 
 //remove old graph    
+d3.select("#scatterplot").text(null);
 var svg = d3.select("#scatterplot").select("svg")
                         .remove();
     
